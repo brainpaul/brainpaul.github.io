@@ -97,7 +97,7 @@
             <div class="card" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-offset="300">
               <img src="img/projects/1.png" class="card-img-top" alt="Project-1" />
               <div class="card-body">
-                <p class="card-text"><a href="https://brainpaul.github.io/">My Portfolio</a> build with Bootsrap 5<br>Animation from <a href="https://michalsnik.github.io/aos/">michalsnik</a><br>Waves from <a href="https://getwaves.io/">getwaves</a></p>
+                <p class="card-text"><a href="https://brainpaul.github.io/">My Portfolio</a> build with Bootsrap 5<br>Animation from <a href="https://michalsnik.github.io/aos/" target="_blank">AOS Library</a><br>3D Animation from <a href="https://micku7zu.github.io/vanilla-tilt.js/" target="_blank">Tilt JS</a></p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
             <div class="card" data-aos="zoom-in-up" data-aos-duration="1000">
               <img src="img/projects/2.jpg" class="card-img-top" alt="Project-2" data-aos-offset="300" />
               <div class="card-body">
-                <p class="card-text">Simple Login System and Admin Panel build with Codeigniter 4<br>Library from <a href="https://github.com/lonnieezell/myth-auth">Myth & Auth</a></p>
+                <p class="card-text">Simple Login System and Admin Panel build with Codeigniter 4<br>Library from <a href="https://github.com/lonnieezell/myth-auth" target="_blank">Myth & Auth</a></p>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@
             <div class="card" data-aos="zoom-in-left" data-aos-duration="1000" data-aos-offset="300">
               <img src="img/projects/3.jpg" class="card-img-top" alt="Project-3" />
               <div class="card-body">
-                <p class="card-text">Games build with Ursina Game Engine (Python)<br>Check my <a href="https://github.com/brainpaul/Ursina-Engine">github!</a></p>
+                <p class="card-text">Games build with Ursina Engine (Python)<br>Check my <a href="https://github.com/brainpaul/Ursina-Engine" target="_blank">github!</a></p>
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@
             <div class="card" data-aos="zoom-in-right" data-aos-duration="1000">
               <img src="img/projects/4.png" class="card-img-top" alt="Project-4" />
               <div class="card-body">
-                <p class="card-text">Bsafe Company Profile build with Materialize<br><a href="https://brainpaul.github.io/BSafe-Company-Profile/">Click here to view</a></p>
+                <p class="card-text">Bsafe Company Profile build with Materialize<br><a href="https://brainpaul.github.io/BSafe-Company-Profile/" target="_blank">Click here to view</a></p>
               </div>
             </div>
           </div>
@@ -135,6 +135,41 @@
           </div> -->
         </div>
       </div>
+
+      <!-- Frameworks Box -->
+      <section id="frameworks">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>Frameworks</h2>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="fw-box">
+              <h4 class="fw-name">Bootstrap</h4>
+              <img src="img/logo/bootstrap-logo.png" alt="bootstrap logo" class="fw-img">
+              <a href="https://getbootstrap.com/" target="_blank" class="btn btn-light fw-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="fw-box">
+              <h4 class="fw-name">Codeigniter</h4>
+              <img src="img/logo/codeigniter-logo.png" alt="codeigniter logo" class="fw-img">
+              <a href="https://codeigniter.com/" target="_blank" class="btn btn-light fw-detail-button">Show Details</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="fw-box">
+              <h4 class="fw-name">Materialize</h4>
+              <img src="img/logo/materialize-logo.png" alt="materialize logo" class="fw-img">
+              <a href="https://materializecss.com/" target="_blank" class="btn btn-light fw-detail-button">Show Details</a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#FFFFFF"
@@ -186,7 +221,7 @@
 
     <!--Footer-->
     <footer class="text-white text-center mt-3 pt-3 pb-2" style="background-color: #1bbc9b">
-      <p>Created with love by <a href="https://www.instagram.com/brain_paul/" class="text-white fw-bold">Brain Paul</a></p>
+      <p>Created with love by <a href="https://www.instagram.com/brain_paul/" target="_blank" class="text-white fw-bold">Brain Paul</a></p>
     </footer>
     <!--Akhir Footer-->
 
@@ -239,5 +274,15 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+    <!-- Tilt JS -->
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".fw-box"), {
+		max: 25,
+		speed: 1000,
+    glare: true
+	});
+</script>
   </body>
 </html>

@@ -15,3 +15,57 @@
 section {
   padding-top: 5rem;
 }
+
+/* Frameworks Box Section */
+.fw-box {
+  position: relative;
+  background-color: darkcyan;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.fw-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  transform: translate3d(0, 0, 60px);
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.fw-box:hover .fw-name {
+  top: 20px;
+  opacity: 1;
+}
+
+.fw-detail-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.fw-box:hover .fw-detail-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.fw-img {
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 90px);
+  max-width: 300px;
+  max-height: 300px;
+  transition: 0.5s;
+}
+
+.fw-box:hover .fw-img {
+  transform: translate3d(-50%, -50%, 90px) scale(1.2);
+}
