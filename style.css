@@ -16,6 +16,10 @@ section {
   padding-top: 5rem;
 }
 
+.skills {
+  list-style-type: none;
+}
+
 /* Frameworks Box Section */
 .fw-box {
   position: relative;
